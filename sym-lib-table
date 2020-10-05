@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name tardigrade-components)(type Legacy)(uri ${KIPRJMOD}/tardigrade-components.lib)(options "")(descr ""))
+  (lib (name tardigrade-rescue)(type Legacy)(uri ${KIPRJMOD}/tardigrade-rescue.lib)(options "")(descr ""))
+)

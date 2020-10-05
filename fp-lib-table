@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name tardigrade-components)(type KiCad)(uri ${KIPRJMOD}/tardigrade-components.pretty)(options "")(descr ""))
+)
