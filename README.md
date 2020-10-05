@@ -4,7 +4,7 @@ Tardigrade is an open hardware low-power board featuring NXP's LPC55S16 MCU, Sem
 
 ## Hardware
 
-Schema and layout was created using [KiCad](https://github.com/nortismo/LoRaMac-node).
+Schema and layout was created using [KiCad](https://kicad-pcb.org/).
 
 ## Software
 
