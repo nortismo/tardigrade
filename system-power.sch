@@ -298,15 +298,7 @@ Connection ~ 7700 4300
 Wire Wire Line
 	8350 3750 8100 3750
 Wire Wire Line
-	8100 3750 8100 3850
-Wire Wire Line
-	8350 3850 8100 3850
-Connection ~ 8100 3850
-Wire Wire Line
-	8100 3850 8100 3950
-Wire Wire Line
 	8350 3950 8100 3950
-Connection ~ 8100 3950
 Wire Wire Line
 	8350 3650 7700 3650
 Wire Wire Line
@@ -393,7 +385,7 @@ Wire Wire Line
 Wire Wire Line
 	2850 1650 3600 1650
 Connection ~ 3600 1650
-Text Notes 1150 3100 0    50   Italic 0
+Text Notes 500  4000 0    50   Italic 0
 For optimum voltage regulation, \nplace the battery pack as close as \npossible to the device’s VBAT and VSS pins.
 Text Notes 9800 3450 0    50   ~ 0
 up to 800 mA
@@ -484,13 +476,11 @@ Wire Wire Line
 	1800 4850 1800 4750
 Connection ~ 1800 4750
 Wire Wire Line
-	1800 4750 2250 4750
+	1800 4750 2200 4750
 Wire Wire Line
 	1800 5150 1800 5200
 Wire Wire Line
 	3200 3950 3150 3950
-Wire Wire Line
-	3150 3950 3150 2850
 Wire Wire Line
 	3150 2850 3800 2850
 $Comp
@@ -820,7 +810,7 @@ Wire Wire Line
 	2250 4850 2250 4750
 Connection ~ 2250 4750
 Wire Wire Line
-	2250 4750 2550 4750
+	2250 4750 2200 4750
 $Comp
 L Device:LED D3
 U 1 1 5FD157EB
@@ -898,7 +888,7 @@ F 3 "" H 1800 5200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 4750 6850 0    50   ~ 0
-Settings for BQ25504:\n\nVBAT_OV: 4.147 V\nVBAT_UV: 2.998 V\nVBAT_OK: 3.086 V\nVBAT_OK_HYST: 4.095 V\nVREF_SAMP: 0.8 V
+Settings for BQ25504:\n\nVBAT_OV: 4.147 V --------\nVBAT_UV: 2.998 V\nVBAT_OK: 3.086 V\nVBAT_OK_HYST: 4.095 V\nVREF_SAMP: 0.8 V
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5FE1B77A
@@ -1012,8 +1002,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 1650 4100 1650
 Wire Wire Line
-	5750 3650 7700 3650
-Wire Wire Line
 	4500 2300 4500 2850
 Wire Wire Line
 	2950 2200 2950 2250
@@ -1023,8 +1011,6 @@ Wire Wire Line
 	2950 1850 2950 1900
 Wire Wire Line
 	2950 2550 2950 2600
-Wire Wire Line
-	2950 2600 1850 2600
 Wire Wire Line
 	1850 1450 1850 2600
 $Comp
@@ -1144,4 +1130,143 @@ Text GLabel 3100 5700 3    50   UnSpc ~ 0
 BQ_AVSS
 Wire Wire Line
 	3100 5600 3100 5700
+Wire Wire Line
+	2200 3350 2200 4750
+Connection ~ 2200 4750
+$Comp
+L Device:C C?
+U 1 1 5F9DF573
+P 3400 3150
+F 0 "C?" V 3148 3150 50  0000 C CNN
+F 1 "C" V 3239 3150 50  0000 C CNN
+F 2 "" H 3438 3000 50  0001 C CNN
+F 3 "~" H 3400 3150 50  0001 C CNN
+	1    3400 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3150 3150 3250 3150
+Connection ~ 3150 3150
+Wire Wire Line
+	3150 3150 3150 2850
+$Comp
+L power:GND #PWR?
+U 1 1 5F9E9D86
+P 3700 3200
+F 0 "#PWR?" H 3700 2950 50  0001 C CNN
+F 1 "GND" H 3705 3027 50  0000 C CNN
+F 2 "" H 3700 3200 50  0001 C CNN
+F 3 "" H 3700 3200 50  0001 C CNN
+	1    3700 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3200 3700 3150
+Wire Wire Line
+	3700 3150 3550 3150
+Wire Wire Line
+	3150 3150 3150 3950
+Wire Wire Line
+	2200 2600 2200 2700
+Wire Wire Line
+	1850 2600 2200 2600
+Connection ~ 2200 2600
+Wire Wire Line
+	2200 2600 2950 2600
+Wire Wire Line
+	2250 4750 2550 4750
+$Comp
+L Device:R R?
+U 1 1 5FA4E351
+P 2200 2850
+F 0 "R?" H 2270 2896 50  0000 L CNN
+F 1 "150R" H 2270 2805 50  0000 L CNN
+F 2 "" V 2130 2850 50  0001 C CNN
+F 3 "~" H 2200 2850 50  0001 C CNN
+	1    2200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 3000 2200 3050
+$Comp
+L Device:D_Zener D?
+U 1 1 5FA540F4
+P 2200 3200
+F 0 "D?" V 2154 3279 50  0000 L CNN
+F 1 "ca. 2.2V" V 2245 3279 50  0000 L CNN
+F 2 "" H 2200 3200 50  0001 C CNN
+F 3 "~" H 2200 3200 50  0001 C CNN
+	1    2200 3200
+	0    1    1    0   
+$EndComp
+Text Notes 1050 3100 0    50   Italic 0
+Maximum R probieren \nund dann 1-2 Werte zurück\n
+Text GLabel 7500 4050 0    50   Input ~ 0
+VBAT_OK
+Wire Wire Line
+	7350 4050 8000 4050
+Wire Wire Line
+	8000 4050 8000 3850
+Wire Wire Line
+	8350 3850 8000 3850
+Wire Wire Line
+	8100 3750 8100 3950
+Connection ~ 8100 3950
+Text GLabel 6750 2750 1    50   Output ~ 0
+VSTOR
+Wire Wire Line
+	5750 3650 6750 3650
+$Comp
+L Device:R R?
+U 1 1 5FAAB7C8
+P 6750 3400
+F 0 "R?" H 6820 3446 50  0000 L CNN
+F 1 "5.49M" H 6820 3355 50  0000 L CNN
+F 2 "" V 6680 3400 50  0001 C CNN
+F 3 "~" H 6750 3400 50  0001 C CNN
+	1    6750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5FAAEB35
+P 6750 3000
+F 0 "R?" H 6820 3046 50  0000 L CNN
+F 1 "5.49M" H 6820 2955 50  0000 L CNN
+F 2 "" V 6680 3000 50  0001 C CNN
+F 3 "~" H 6750 3000 50  0001 C CNN
+	1    6750 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 3250 6750 3200
+Wire Wire Line
+	6750 2850 6750 2750
+Wire Wire Line
+	6750 3650 6750 3550
+Connection ~ 6750 3650
+Wire Wire Line
+	6750 3650 7700 3650
+$Comp
+L power:GND #PWR?
+U 1 1 5FACE2D9
+P 6500 3300
+F 0 "#PWR?" H 6500 3050 50  0001 C CNN
+F 1 "GND" H 6505 3127 50  0000 C CNN
+F 2 "" H 6500 3300 50  0001 C CNN
+F 3 "" H 6500 3300 50  0001 C CNN
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 3300 6500 3200
+Wire Wire Line
+	6500 3200 6750 3200
+Connection ~ 6750 3200
+Wire Wire Line
+	6750 3200 6750 3150
+Text Notes 5550 3050 0    50   Italic 0
+Spannungsteiler für Messung\nder Batterie-Spannung. \nStimmen R?
+Text Notes 3750 3300 0    50   Italic 0
+Dieses C ist evtl. nicht optimal\nplatziert. Mit KO vor BQ, nach BQ\nund nach DCDC-Converter Messen\nund analysieren, wo Spannung\nzusammenfällt
 $EndSCHEMATC
