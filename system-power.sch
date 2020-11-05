@@ -204,14 +204,14 @@ F 3 "~" H 1550 5700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L tardigrade-components:TPS63031 U
+L tardigrade-components:TPS63031 U5
 U 1 1 5F6C19C3
 P 8700 3850
-F 0 "U" H 8700 4375 50  0000 C CNN
+F 0 "U5" H 8700 4375 50  0000 C CNN
 F 1 "TPS63031" H 8700 4284 50  0000 C CNN
 F 2 "tardigrade-components:TPS63031DSKR" H 8700 4050 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/tps63031.pdf?ts=1600756672780&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS63031" H 8700 4050 50  0001 C CNN
-F 4 "Iq =  0.025 mA" H 8700 4450 50  0000 C CIN "Field4"
+F 4 "Iq =  0.025 mA" H 8700 4450 50  0001 C CIN "Field4"
 	1    8700 3850
 	1    0    0    -1  
 $EndComp

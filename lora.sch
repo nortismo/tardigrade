@@ -743,10 +743,10 @@ Wire Wire Line
 Wire Wire Line
 	6800 4400 8200 4400
 $Comp
-L tardigrade-components:SX1262IMLTRT U
+L tardigrade-components:SX1262IMLTRT U7
 U 1 1 5F806BC9
 P 4650 3250
-F 0 "U" V 4700 3350 50  0000 C CNN
+F 0 "U7" V 4700 3350 50  0000 C CNN
 F 1 "SX1262IMLTRT" V 4800 3550 50  0000 C CNN
 F 2 "tardigrade-components:QFN50P400X400X100-25N-D" H 5900 3750 50  0001 L CNN
 F 3 "http://www.mouser.com/datasheet/2/761/DS_SX1261-2_V1.1-1307803.pdf" H 5900 3650 50  0001 L CNN
@@ -762,10 +762,10 @@ F 11 "https://www.mouser.co.uk/ProductDetail/Semtech/SX1262IMLTRT?qs=XFmntM7Yc9e
 	0    1    1    0   
 $EndComp
 $Comp
-L tardigrade-components:PE4259-63 U
+L tardigrade-components:PE4259-63 U8
 U 1 1 5F80B8FA
 P 7950 3850
-F 0 "U" H 8850 4115 50  0000 C CNN
+F 0 "U8" H 8850 4115 50  0000 C CNN
 F 1 "PE4259-63" H 8850 4024 50  0000 C CNN
 F 2 "tardigrade-components:SOT65P210X110-6N" H 9300 3950 50  0001 L CNN
 F 3 "https://www.psemi.com/pdf/datasheets/pe4259ds.pdf" H 9300 3850 50  0001 L CNN
