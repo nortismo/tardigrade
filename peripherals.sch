@@ -18,8 +18,8 @@ L tardigrade-rescue:ATECC608A-TNGLORAU-B-tardigrade-components IC?
 U 1 1 5F708DEE
 P 2050 1900
 AR Path="/5F708DEE" Ref="IC?"  Part="1" 
-AR Path="/5F708A6A/5F708DEE" Ref="IC5"  Part="1" 
-F 0 "IC5" H 2650 2165 50  0000 C CNN
+AR Path="/5F708A6A/5F708DEE" Ref="U"  Part="1" 
+F 0 "U" H 2650 2165 50  0000 C CNN
 F 1 "ATECC608A-TNGLORAU-B" H 2650 2074 50  0000 C CNN
 F 2 "tardigrade-components:SON50P300X200X60-9N" H 3100 2000 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40002154A.pdf" H 3100 1900 50  0001 L CNN

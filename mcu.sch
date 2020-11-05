@@ -524,8 +524,8 @@ L tardigrade-rescue:LPC55S16JBD64E-tardigrade-components IC?
 U 1 1 5F6D8582
 P 3600 2900
 AR Path="/5F6D8582" Ref="IC?"  Part="1" 
-AR Path="/5F6D82DD/5F6D8582" Ref="IC2"  Part="1" 
-F 0 "IC2" H 6200 3600 50  0000 L CNN
+AR Path="/5F6D82DD/5F6D8582" Ref="U"  Part="1" 
+F 0 "U" H 6200 3600 50  0000 L CNN
 F 1 "LPC55S16JBD64E" H 6200 3500 50  0000 L CNN
 F 2 "tardigrade-components:QFP50P1200X1200X120-65N" H 5850 3700 50  0001 L CNN
 F 3 "https://www.nxp.com/docs/en/nxp/data-sheets/LPC55S1x_PDS.pdf" H 5850 3600 50  0001 L CNN
