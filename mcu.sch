@@ -168,7 +168,7 @@ F 3 "~" H 2600 2050 50  0001 C CNN
 	1    2600 2050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2050 1850 0    50   UnSpc ~ 0
+Text GLabel 2400 1850 0    50   UnSpc ~ 0
 MCU_VDD
 Wire Wire Line
 	3100 1900 3100 1850
@@ -235,7 +235,7 @@ Wire Wire Line
 	3600 3700 1800 3700
 Wire Wire Line
 	1800 3700 1800 3950
-Text GLabel 1250 3700 0    50   UnSpc ~ 0
+Text GLabel 1650 3700 0    50   UnSpc ~ 0
 MCU_VDDA
 Connection ~ 1800 3700
 Text GLabel 2300 3800 0    50   UnSpc ~ 0
@@ -271,52 +271,9 @@ Wire Wire Line
 	3450 4500 3450 4600
 Wire Wire Line
 	1800 4250 1800 4500
-$Comp
-L Device:Jumper_NC_Small JP5
-U 1 1 5F7DD754
-P 800 1200
-F 0 "JP5" V 800 1152 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 755 1153 50  0001 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 800 1200 50  0001 C CNN
-F 3 "~" H 800 1200 50  0001 C CNN
-	1    800  1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	800  1000 800  1100
-Text GLabel 800  1400 3    50   UnSpc ~ 0
+Text GLabel 9600 5400 3    50   UnSpc ~ 0
 MCU_VDD
-Wire Wire Line
-	800  1400 800  1300
-$Comp
-L Device:Jumper_NC_Small JP6
-U 1 1 5F7E73B1
-P 1150 1200
-F 0 "JP6" V 1150 1152 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 1105 1153 50  0001 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1150 1200 50  0001 C CNN
-F 3 "~" H 1150 1200 50  0001 C CNN
-	1    1150 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1150 1400 1150 1300
-$Comp
-L Device:Jumper_NC_Small JP7
-U 1 1 5F7EB320
-P 1500 1200
-F 0 "JP7" V 1500 1152 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 1455 1153 50  0001 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 1500 1200 50  0001 C CNN
-F 3 "~" H 1500 1200 50  0001 C CNN
-	1    1500 1200
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1500 1000 1500 1100
-Wire Wire Line
-	1500 1400 1500 1300
-Text GLabel 1150 1400 3    50   UnSpc ~ 0
+Text GLabel 10100 5400 3    50   UnSpc ~ 0
 MCU_VDDA
 $Comp
 L power:GND #PWR026
@@ -805,7 +762,7 @@ Text GLabel 3450 3200 0    50   BiDi ~ 0
 MCU_PIO1_0
 Wire Wire Line
 	3450 3500 3600 3500
-Text GLabel 1500 1400 3    50   UnSpc ~ 0
+Text GLabel 10350 5400 3    50   UnSpc ~ 0
 MCU_VREF
 Text GLabel 3450 3500 0    50   BiDi ~ 0
 MCU_PIO0_16
@@ -849,107 +806,46 @@ Text Notes 7300 3450 0    50   Italic 0
 Place as close as possible to MCU
 Text Notes 2750 6600 0    50   Italic 0
 Place as close as possible to MCU
-Text Notes 550  850  0    50   ~ 0
+Text Notes 9400 4850 0    50   ~ 0
 VDDA: Analog supply voltage for ADC\nVREF:  ADC positive reference voltage\n\n 
 $Comp
 L power:+3.3V #PWR020
 U 1 1 5F814958
-P 800 1000
-F 0 "#PWR020" H 800 850 50  0001 C CNN
-F 1 "+3.3V" H 815 1173 50  0000 C CNN
-F 2 "" H 800 1000 50  0001 C CNN
-F 3 "" H 800 1000 50  0001 C CNN
-	1    800  1000
+P 9600 5000
+F 0 "#PWR020" H 9600 4850 50  0001 C CNN
+F 1 "+3.3V" H 9615 5173 50  0000 C CNN
+F 2 "" H 9600 5000 50  0001 C CNN
+F 3 "" H 9600 5000 50  0001 C CNN
+	1    9600 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR021
 U 1 1 5F814F31
-P 1150 1000
-F 0 "#PWR021" H 1150 850 50  0001 C CNN
-F 1 "+3.3V" H 1165 1173 50  0000 C CNN
-F 2 "" H 1150 1000 50  0001 C CNN
-F 3 "" H 1150 1000 50  0001 C CNN
-	1    1150 1000
+P 10100 5000
+F 0 "#PWR021" H 10100 4850 50  0001 C CNN
+F 1 "+3.3V" H 10115 5173 50  0000 C CNN
+F 2 "" H 10100 5000 50  0001 C CNN
+F 3 "" H 10100 5000 50  0001 C CNN
+	1    10100 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3V #PWR022
 U 1 1 5F81543D
-P 1500 1000
-F 0 "#PWR022" H 1500 850 50  0001 C CNN
-F 1 "+3.3V" H 1515 1173 50  0000 C CNN
-F 2 "" H 1500 1000 50  0001 C CNN
-F 3 "" H 1500 1000 50  0001 C CNN
-	1    1500 1000
+P 10350 5000
+F 0 "#PWR022" H 10350 4850 50  0001 C CNN
+F 1 "+3.3V" H 10365 5173 50  0000 C CNN
+F 2 "" H 10350 5000 50  0001 C CNN
+F 3 "" H 10350 5000 50  0001 C CNN
+	1    10350 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1150 1000 1150 1100
 Wire Wire Line
 	6000 4300 7050 4300
 Wire Wire Line
 	6000 4200 6950 4200
-$Comp
-L power:+3.3V #PWR033
-U 1 1 5F97F3C4
-P 7650 4300
-F 0 "#PWR033" H 7650 4150 50  0001 C CNN
-F 1 "+3.3V" H 7665 4473 50  0000 C CNN
-F 2 "" H 7650 4300 50  0001 C CNN
-F 3 "" H 7650 4300 50  0001 C CNN
-	1    7650 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R20
-U 1 1 5F97FCBC
-P 7300 4400
-F 0 "R20" V 7093 4400 50  0000 C CNN
-F 1 "0R" V 7184 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7230 4400 50  0001 C CNN
-F 3 "~" H 7300 4400 50  0001 C CNN
-	1    7300 4400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7650 4300 7650 4400
-Wire Wire Line
-	7650 4400 7450 4400
-Wire Wire Line
-	7150 4400 7050 4400
 Connection ~ 7050 4400
-$Comp
-L Device:R R16
-U 1 1 5F994D9B
-P 1450 3700
-F 0 "R16" V 1243 3700 50  0000 C CNN
-F 1 "0R" V 1334 3700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1380 3700 50  0001 C CNN
-F 3 "~" H 1450 3700 50  0001 C CNN
-	1    1450 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	1250 3700 1300 3700
-Wire Wire Line
-	1600 3700 1800 3700
-$Comp
-L Device:R R17
-U 1 1 5F9AA32C
-P 2250 1850
-F 0 "R17" V 2043 1850 50  0000 C CNN
-F 1 "0R" V 2134 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 1850 50  0001 C CNN
-F 3 "~" H 2250 1850 50  0001 C CNN
-	1    2250 1850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2400 1850 2600 1850
-Connection ~ 2600 1850
-Wire Wire Line
-	2100 1850 2050 1850
 $Comp
 L Device:C C21
 U 1 1 5F6E300F
@@ -983,21 +879,8 @@ F 3 "" H 5600 6200 50  0001 C CNN
 	1    5600 6200
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:L L3
-U 1 1 5F6E59A5
-P 5700 5600
-F 0 "L3" H 5656 5554 50  0000 R CNN
-F 1 "4.7uH" H 5656 5645 50  0000 R CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 5700 5600 50  0001 C CNN
-F 3 "~" H 5700 5600 50  0001 C CNN
-	1    5700 5600
-	-1   0    0    1   
-$EndComp
 Text GLabel 3350 4000 0    50   Input ~ 0
 VSTOR_MEASURE
-Wire Wire Line
-	5700 5400 5700 5450
 Wire Wire Line
 	5400 5400 5700 5400
 Wire Wire Line
@@ -1010,8 +893,6 @@ Connection ~ 5200 5750
 Wire Wire Line
 	5450 5800 5450 5750
 Connection ~ 5450 5750
-Wire Wire Line
-	5450 5750 5700 5750
 Wire Wire Line
 	5200 5750 5300 5750
 Wire Wire Line
@@ -1043,4 +924,49 @@ Wire Wire Line
 	5450 6150 5600 6150
 Text GLabel 3450 3100 0    50   BiDi ~ 0
 MCU_PIO0_17
+Wire Wire Line
+	9600 5000 9600 5400
+Wire Wire Line
+	10100 5000 10100 5400
+Wire Wire Line
+	10350 5000 10350 5400
+Text GLabel 9850 5400 3    50   UnSpc ~ 0
+MCU_VBAT_PMU
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB0F073
+P 9850 5000
+F 0 "#PWR?" H 9850 4850 50  0001 C CNN
+F 1 "+3.3V" H 9865 5173 50  0000 C CNN
+F 2 "" H 9850 5000 50  0001 C CNN
+F 3 "" H 9850 5000 50  0001 C CNN
+	1    9850 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 5000 9850 5400
+Wire Wire Line
+	2400 1850 2600 1850
+Connection ~ 2600 1850
+Wire Wire Line
+	1650 3700 1800 3700
+Wire Wire Line
+	5700 5400 5700 5450
+Wire Wire Line
+	5450 5750 5700 5750
+$Comp
+L Device:L L3
+U 1 1 5F6E59A5
+P 5700 5600
+F 0 "L3" H 5656 5554 50  0000 R CNN
+F 1 "4.7uH" H 5656 5645 50  0000 R CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5700 5600 50  0001 C CNN
+F 3 "~" H 5700 5600 50  0001 C CNN
+	1    5700 5600
+	-1   0    0    1   
+$EndComp
+Text GLabel 7150 4400 2    50   UnSpc ~ 0
+MCU_VBAT_PMU
+Wire Wire Line
+	7050 4400 7150 4400
 $EndSCHEMATC
