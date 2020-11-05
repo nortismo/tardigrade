@@ -793,8 +793,6 @@ Text GLabel 5000 1750 1    50   Output ~ 0
 GNSS_NRESET
 Text GLabel 6150 4100 2    50   Input ~ 0
 GNSS_PPS
-Text GLabel 3450 3100 0    50   Input ~ 0
-VBAT_OK
 Wire Wire Line
 	5000 1750 5000 1900
 Wire Wire Line
@@ -1043,4 +1041,6 @@ Wire Wire Line
 Connection ~ 5450 6150
 Wire Wire Line
 	5450 6150 5600 6150
+Text GLabel 3450 3100 0    50   BiDi ~ 0
+MCU_PIO0_17
 $EndSCHEMATC
