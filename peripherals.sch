@@ -76,9 +76,9 @@ Wire Wire Line
 Wire Wire Line
 	4050 1900 4050 1850
 Text GLabel 3950 2400 2    50   BiDi ~ 0
-SE_I2C_SDA
+SE_SDA
 Text GLabel 3950 2300 2    50   Input ~ 0
-SE_I2C_SCL
+SE_SCL
 $Comp
 L Device:C C45
 U 1 1 5F71C8D3

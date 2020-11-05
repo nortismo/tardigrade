@@ -459,10 +459,10 @@ Wire Wire Line
 	3500 7400 3500 7300
 Wire Wire Line
 	3500 7300 3700 7300
-Text GLabel 4400 6200 3    50   Input ~ 0
+Text GLabel 4400 5350 3    50   Input ~ 0
 MCU_RESET
 Wire Wire Line
-	4400 5300 4400 6200
+	4400 5300 4400 5350
 Text GLabel 4700 5350 3    50   BiDi ~ 0
 MCU_USB1_DN
 Wire Wire Line
@@ -620,7 +620,7 @@ MCU_SWDCLK
 Connection ~ 2400 4500
 Wire Wire Line
 	2400 4500 3450 4500
-Text GLabel 4000 5350 3    50   Output ~ 0
+Text GLabel 3350 4100 0    50   Output ~ 0
 MCU_SWO
 Wire Wire Line
 	3450 3300 3600 3300
@@ -642,12 +642,6 @@ Text GLabel 4200 1750 1    50   BiDi ~ 0
 MCU_USB0_DN
 Text GLabel 4300 1750 1    50   BiDi ~ 0
 MCU_USB0_DP
-Text GLabel 4700 1750 1    50   BiDi ~ 0
-MCU_PIO0_19
-Text GLabel 5500 1750 1    50   BiDi ~ 0
-MCU_PIO0_22
-Text GLabel 5600 1750 1    50   BiDi ~ 0
-MCU_PIO0_21
 Wire Wire Line
 	4200 1750 4200 1900
 Wire Wire Line
@@ -666,16 +660,12 @@ Wire Wire Line
 	5500 1750 5500 1900
 Wire Wire Line
 	5600 1750 5600 1900
-Text GLabel 6150 2900 2    50   BiDi ~ 0
-MCU_PIO0_20
 Text GLabel 6150 3500 2    50   BiDi ~ 0
 MCU_PIO1_3
 Text GLabel 6150 3600 2    50   BiDi ~ 0
 MCU_PIO1_2
 Text GLabel 6150 3800 2    50   BiDi ~ 0
 MCU_PIO1_1
-Text GLabel 6150 3900 2    50   BiDi ~ 0
-MCU_PIO0_18
 Text GLabel 6150 4000 2    50   BiDi ~ 0
 MCU_PIO0_9
 Wire Wire Line
@@ -700,22 +690,20 @@ Wire Wire Line
 	4100 5300 4100 5350
 Text GLabel 6150 3300 2    50   Input ~ 0
 SX1262_DIO1
-Text GLabel 6150 3200 2    50   Input ~ 0
+Text GLabel 3450 3100 0    50   Input ~ 0
 SX1262_BUSY
 Text GLabel 6150 3000 2    50   Input ~ 0
 SX1262_MISO
 Text GLabel 6150 3100 2    50   Output ~ 0
 SX1262_MOSI
-Text GLabel 3350 4100 0    50   BiDi ~ 0
-MCU_PIO0_10
 Wire Wire Line
 	6000 3100 6150 3100
 Text GLabel 3450 2900 0    50   Output ~ 0
 SX1262_SCK
-Text GLabel 6150 3700 2    50   BiDi ~ 0
-SE_I2C_SDA
-Text GLabel 4100 5350 3    50   Output ~ 0
-SE_I2C_SCL
+Text GLabel 6150 2900 2    50   BiDi ~ 0
+SE_SDA
+Text GLabel 4700 1750 1    50   Output ~ 0
+SE_SCL
 Text GLabel 5300 1750 1    50   Output ~ 0
 GNSS_RX
 Text GLabel 5200 1750 1    50   Input ~ 0
@@ -725,8 +713,8 @@ MCU_UART_RX
 Text GLabel 4500 1750 1    50   Output ~ 0
 MCU_UART_TX
 Text Notes 8950 2650 0    50   ~ 0
-Flexcomm 0:\nUART TXD, RXD\n\nFlexcomm 1:\nSPI SCK, MOSI, MISO\n\nFlexcomm 2:\nI2C SCL, SDA\n\nFlexcomm 3:\nGPS TXD, RXD\n\nFlexcomm 4:\nVarious internal IOs\n\nFlexcomm 5:\nFlexcomm 6:\nFlexcomm 7:\nFlexcomm 8:
-Text GLabel 5400 1750 1    50   Output ~ 0
+Flexcomm 0:\nUART TXD, RXD\n\nFlexcomm 1:\nSPI SCK, MOSI, MISO\n\nFlexcomm 2:\nFlexcomm 3:\nGPS TXD, RXD\n\nFlexcomm 4:\nVarious internal IOs\n\nFlexcomm 5:\nFlexcomm 6:\nFlexcomm 7:\nI2C SCL, SDA\n\nFlexcomm 8:
+Text GLabel 3450 3200 0    50   Output ~ 0
 SX1262_NRESET
 Text Notes 8950 3600 0    50   Italic 0
 PIO1_0\nPIO0_31\nPIO1_1\nPIO0_25\nPIO0_18
@@ -736,19 +724,15 @@ Wire Wire Line
 	3450 3000 3600 3000
 Wire Wire Line
 	6150 3300 6000 3300
-Wire Wire Line
-	6150 3200 6000 3200
 Text GLabel 3450 3000 0    50   Output ~ 0
 SX1262_NSS
-Text GLabel 4800 1750 1    50   Output ~ 0
-LORA_ANT_SW
 Wire Wire Line
 	5400 1750 5400 1900
 Wire Wire Line
 	4800 1750 4800 1900
-Text GLabel 5000 1750 1    50   Output ~ 0
+Text GLabel 5500 1750 1    50   Output ~ 0
 GNSS_NRESET
-Text GLabel 6150 4100 2    50   Input ~ 0
+Text GLabel 5400 1750 1    50   Input ~ 0
 GNSS_PPS
 Wire Wire Line
 	5000 1750 5000 1900
@@ -758,8 +742,6 @@ Wire Wire Line
 	3450 3100 3600 3100
 Wire Wire Line
 	3450 3200 3600 3200
-Text GLabel 3450 3200 0    50   BiDi ~ 0
-MCU_PIO1_0
 Wire Wire Line
 	3450 3500 3600 3500
 Text GLabel 10350 5400 3    50   UnSpc ~ 0
@@ -802,8 +784,6 @@ Wire Wire Line
 	4200 5300 4200 6650
 Wire Wire Line
 	4300 5300 4300 6900
-Text Notes 7300 3450 0    50   Italic 0
-Place as close as possible to MCU
 Text Notes 2750 6600 0    50   Italic 0
 Place as close as possible to MCU
 Text Notes 9400 4850 0    50   ~ 0
@@ -922,8 +902,6 @@ Wire Wire Line
 Connection ~ 5450 6150
 Wire Wire Line
 	5450 6150 5600 6150
-Text GLabel 3450 3100 0    50   BiDi ~ 0
-MCU_PIO0_17
 Wire Wire Line
 	9600 5000 9600 5400
 Wire Wire Line
@@ -969,4 +947,26 @@ Text GLabel 7150 4400 2    50   UnSpc ~ 0
 MCU_VBAT_PMU
 Wire Wire Line
 	7050 4400 7150 4400
+Text Notes 7300 3450 0    50   Italic 0
+Place as close as possible to MCU
+Text GLabel 4800 1750 1    50   Output ~ 0
+LORA_ANT_SW
+Text GLabel 5000 1750 1    50   BiDi ~ 0
+MCU_PIO0_4
+Text GLabel 6150 3200 2    50   BiDi ~ 0
+MCU_PIO0_24
+Wire Wire Line
+	6000 3200 6150 3200
+Text GLabel 6150 4100 2    50   BiDi ~ 0
+MCU_PIO0_0
+Text GLabel 6150 3900 2    50   BiDi ~ 0
+MCU_PIO0_18
+Text GLabel 6150 3700 2    50   BiDi ~ 0
+MCU_PIO0_26
+Text GLabel 4100 5350 3    50   BiDi ~ 0
+MCU_PIO0_27
+Text GLabel 4000 5350 3    50   BiDi ~ 0
+MCU_PIO0_8
+Text GLabel 5600 1750 1    50   BiDi ~ 0
+MCU_PIO0_21
 $EndSCHEMATC
