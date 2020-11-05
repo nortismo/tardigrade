@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
 Title "Tardigrade"
-Date "2020-09-24"
+Date "2020-11-05"
 Rev "1.0"
 Comp "Lucerne University of Applied Sciences and Arts"
 Comment1 "Author: Diego Bienz"
@@ -544,11 +544,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 1600 4000 1600
 Wire Wire Line
-	9200 1650 9200 2650
-Text GLabel 8400 2150 2    50   BiDi ~ 0
-MCU_PIO0_23
-Wire Wire Line
-	8400 2150 8300 2150
+	9200 1650 9200 2150
 Wire Wire Line
 	3350 1600 3400 1600
 Wire Wire Line
@@ -567,4 +563,9 @@ F 3 "~" H 3350 1550 50  0001 C CNN
 	1    3350 1550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	8300 2150 9200 2150
+Connection ~ 9200 2150
+Wire Wire Line
+	9200 2150 9200 2650
 $EndSCHEMATC

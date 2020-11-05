@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 6
 Title "Tardigrade"
-Date "2020-09-24"
+Date "2020-11-05"
 Rev "1.0"
 Comp "Lucerne University of Applied Sciences and Arts"
 Comment1 "Author: Diego Bienz"
@@ -984,8 +984,8 @@ F 3 "" H 1500 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 1000 1150 1100
-Text GLabel 3350 4000 0    50   BiDi ~ 0
-MCU_PIO0_23
+Text GLabel 3350 4000 0    50   Input ~ 0
+VSTOR_MEASURE
 Wire Wire Line
 	6000 4300 7050 4300
 Wire Wire Line
