@@ -392,8 +392,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/bq25504.pdf" H 3700 5150 50  0001 C CNN
 	1    4000 4350
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	1550 4750 1800 4750
 $Comp
 L power:GND #PWR01
 U 1 1 5F80C076
@@ -454,21 +452,14 @@ Wire Wire Line
 $Comp
 L Device:C C1
 U 1 1 5F82827F
-P 1800 5000
-F 0 "C1" H 1915 5046 50  0000 L CNN
-F 1 "4.7uF" H 1915 4955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 4850 50  0001 C CNN
-F 3 "~" H 1800 5000 50  0001 C CNN
-	1    1800 5000
+P 2650 5000
+F 0 "C1" H 2765 5046 50  0000 L CNN
+F 1 "4.7uF" H 2765 4955 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2688 4850 50  0001 C CNN
+F 3 "~" H 2650 5000 50  0001 C CNN
+	1    2650 5000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 4850 1800 4750
-Connection ~ 1800 4750
-Wire Wire Line
-	1800 4750 2200 4750
-Wire Wire Line
-	1800 5150 1800 5200
 Wire Wire Line
 	3200 3950 3150 3950
 $Comp
@@ -745,13 +736,8 @@ Wire Wire Line
 	3700 3750 3700 3650
 Wire Wire Line
 	3700 3650 3650 3650
-Text GLabel 2250 4850 3    50   Input ~ 0
+Text GLabel 1900 4850 3    50   Input ~ 0
 EXT_VIN
-Wire Wire Line
-	2250 4850 2250 4750
-Connection ~ 2250 4750
-Wire Wire Line
-	2250 4750 2200 4750
 Wire Wire Line
 	1450 5450 1200 5450
 Wire Wire Line
@@ -759,12 +745,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR02
 U 1 1 5FDF1918
-P 1800 5200
-F 0 "#PWR02" H 1800 4950 50  0001 C CNN
-F 1 "GND" H 1805 5027 50  0000 C CNN
-F 2 "" H 1800 5200 50  0001 C CNN
-F 3 "" H 1800 5200 50  0001 C CNN
-	1    1800 5200
+P 2650 5250
+F 0 "#PWR02" H 2650 5000 50  0001 C CNN
+F 1 "GND" H 2655 5077 50  0000 C CNN
+F 2 "" H 2650 5250 50  0001 C CNN
+F 3 "" H 2650 5250 50  0001 C CNN
+	1    2650 5250
 	1    0    0    -1  
 $EndComp
 Text Notes 4750 6850 0    50   ~ 0
@@ -853,15 +839,6 @@ Text Notes 5350 2150 0    50   ~ 0
 Either equip R2 for the use of a LIPO battery,\nor R3 for the use of an externally placed super-\ncapacitor.
 Text Notes 8700 1250 0    50   ~ 0
 5V
-Wire Wire Line
-	1550 4750 1550 5300
-Text GLabel 1450 5300 0    50   Input ~ 0
-VSOLAR
-Wire Wire Line
-	1450 5300 1550 5300
-Connection ~ 1550 5300
-Wire Wire Line
-	1550 5300 1550 5500
 $Comp
 L power:PWR_FLAG #FLG04
 U 1 1 5F716321
@@ -1146,14 +1123,37 @@ Wire Wire Line
 Connection ~ 4100 1350
 Wire Wire Line
 	4100 1350 4100 1750
-Text Notes 3250 1100 0    50   Italic 0
+Text Notes 3150 1000 0    50   Italic 0
 CAUTION:\nFootprint 1206
-Wire Wire Line
-	2250 4750 2750 4750
 Wire Wire Line
 	3150 2850 4500 2850
 Wire Wire Line
 	5150 3650 6750 3650
 Wire Wire Line
 	9700 3300 9700 3650
+Wire Wire Line
+	1550 5300 1550 5500
+Wire Wire Line
+	1550 4750 1550 5300
+Connection ~ 1550 5300
+Wire Wire Line
+	1450 5300 1550 5300
+Text GLabel 1450 5300 0    50   Input ~ 0
+VSOLAR
+Wire Wire Line
+	1550 4750 1900 4750
+Wire Wire Line
+	2650 5250 2650 5150
+Wire Wire Line
+	2650 4850 2650 4750
+Connection ~ 2650 4750
+Wire Wire Line
+	2650 4750 2750 4750
+Wire Wire Line
+	2200 4750 2650 4750
+Wire Wire Line
+	1900 4850 1900 4750
+Connection ~ 1900 4750
+Wire Wire Line
+	1900 4750 2200 4750
 $EndSCHEMATC
