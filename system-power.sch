@@ -473,8 +473,6 @@ Wire Wire Line
 	1800 5150 1800 5200
 Wire Wire Line
 	3200 3950 3150 3950
-Wire Wire Line
-	3150 2850 3800 2850
 $Comp
 L Device:C C5
 U 1 1 5F83D220
@@ -773,23 +771,6 @@ F 3 "~" H 5450 3650 50  0001 C CNN
 	1    5450 3650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5550 3650 5750 3650
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FB646D7
-P 3900 2850
-AR Path="/5F6D82DD/5FB646D7" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5FB646D7" Ref="JP1"  Part="1" 
-F 0 "JP1" V 4000 3000 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 3855 2803 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2850 50  0001 C CNN
-F 3 "~" H 3900 2850 50  0001 C CNN
-	1    3900 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 2850 4500 2850
 Text GLabel 3650 3650 0    50   Output ~ 0
 VBAT_OK
 Wire Wire Line
@@ -803,67 +784,6 @@ Wire Wire Line
 Connection ~ 2250 4750
 Wire Wire Line
 	2250 4750 2200 4750
-$Comp
-L Device:LED D3
-U 1 1 5FD157EB
-P 6400 4050
-F 0 "D3" H 6393 3795 50  0000 C CNN
-F 1 "LED" H 6393 3886 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 6400 4050 50  0001 C CNN
-F 3 "~" H 6400 4050 50  0001 C CNN
-	1    6400 4050
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR013
-U 1 1 5FD2B6F5
-P 6600 4200
-F 0 "#PWR013" H 6600 3950 50  0001 C CNN
-F 1 "GND" H 6605 4027 50  0000 C CNN
-F 2 "" H 6600 4200 50  0001 C CNN
-F 3 "" H 6600 4200 50  0001 C CNN
-	1    6600 4200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 3650 5750 3800
-Wire Wire Line
-	5750 4050 5850 4050
-Connection ~ 5750 3650
-Wire Wire Line
-	6150 4050 6250 4050
-Wire Wire Line
-	6550 4050 6600 4050
-Wire Wire Line
-	6600 4050 6600 4200
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FD67818
-P 5750 3900
-AR Path="/5F6D82DD/5FD67818" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5FD67818" Ref="JP3"  Part="1" 
-F 0 "JP3" V 5850 4050 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 5705 3853 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5750 3900 50  0001 C CNN
-F 3 "~" H 5750 3900 50  0001 C CNN
-	1    5750 3900
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5750 4000 5750 4050
-$Comp
-L Device:R R14
-U 1 1 5FD3F226
-P 6000 4050
-F 0 "R14" V 5793 4050 50  0000 C CNN
-F 1 "100R" V 5884 4050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5930 4050 50  0001 C CNN
-F 3 "~" H 6000 4050 50  0001 C CNN
-	1    6000 4050
-	0    1    1    0   
-$EndComp
-Text Notes 5800 4250 0    59   ~ 12
-Power Indicator
 Wire Wire Line
 	1450 5450 1200 5450
 Wire Wire Line
@@ -1045,63 +965,6 @@ Wire Wire Line
 Connection ~ 3600 2250
 Wire Wire Line
 	3600 2250 3600 2350
-$Comp
-L Device:LED D4
-U 1 1 5F7370BF
-P 2550 5700
-F 0 "D4" H 2543 5445 50  0000 C CNN
-F 1 "LED" H 2543 5536 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 2550 5700 50  0001 C CNN
-F 3 "~" H 2550 5700 50  0001 C CNN
-	1    2550 5700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R33
-U 1 1 5F75039A
-P 2550 5300
-F 0 "R33" V 2343 5300 50  0000 C CNN
-F 1 "100R" V 2434 5300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2480 5300 50  0001 C CNN
-F 3 "~" H 2550 5300 50  0001 C CNN
-	1    2550 5300
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5F7615AA
-P 2550 4950
-AR Path="/5F6D82DD/5F7615AA" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5F7615AA" Ref="JP16"  Part="1" 
-F 0 "JP16" V 2650 5150 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 2505 4903 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 4950 50  0001 C CNN
-F 3 "~" H 2550 4950 50  0001 C CNN
-	1    2550 4950
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2550 4750 2550 4850
-Connection ~ 2550 4750
-Wire Wire Line
-	2550 4750 2750 4750
-Wire Wire Line
-	2550 5050 2550 5150
-$Comp
-L power:GND #PWR077
-U 1 1 5F784737
-P 2550 5950
-F 0 "#PWR077" H 2550 5700 50  0001 C CNN
-F 1 "GND" H 2555 5777 50  0000 C CNN
-F 2 "" H 2550 5950 50  0001 C CNN
-F 3 "" H 2550 5950 50  0001 C CNN
-	1    2550 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2550 5450 2550 5550
-Wire Wire Line
-	2550 5850 2550 5950
 Text GLabel 5300 4150 2    50   UnSpc ~ 0
 BQ_AVSS
 Wire Wire Line
@@ -1132,8 +995,6 @@ Wire Wire Line
 Connection ~ 2200 2700
 Wire Wire Line
 	2200 2700 2950 2700
-Wire Wire Line
-	2250 4750 2550 4750
 $Comp
 L Device:R R34
 U 1 1 5FA4E351
@@ -1165,8 +1026,6 @@ Wire Wire Line
 Connection ~ 8100 3950
 Text GLabel 6850 2700 2    50   Output ~ 0
 VSTOR_MEASURE
-Wire Wire Line
-	5750 3650 6750 3650
 $Comp
 L Device:R R36
 U 1 1 5FAAB7C8
@@ -1321,4 +1180,25 @@ Wire Wire Line
 	4100 1350 4100 1750
 Text Notes 3250 1100 0    50   Italic 0
 CAUTION:\nFootprint 1206
+Wire Wire Line
+	4000 2850 4500 2850
+Wire Wire Line
+	3150 2850 3800 2850
+$Comp
+L Device:Jumper_NC_Small JP?
+U 1 1 5FB646D7
+P 3900 2850
+AR Path="/5F6D82DD/5FB646D7" Ref="JP?"  Part="1" 
+AR Path="/5F687AA1/5FB646D7" Ref="JP1"  Part="1" 
+F 0 "JP1" V 4000 3000 50  0000 R CNN
+F 1 "Jumper_NC_Small" V 3855 2803 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2850 50  0001 C CNN
+F 3 "~" H 3900 2850 50  0001 C CNN
+	1    3900 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4750 2750 4750
+Wire Wire Line
+	5550 3650 6750 3650
 $EndSCHEMATC
