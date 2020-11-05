@@ -582,104 +582,8 @@ F 10 "https://www.mouser.com/Search/Refine.aspx?Keyword=771-LPC55S16JBD64E" H 58
 	1    3600 2900
 	1    0    0    -1  
 $EndComp
-Connection ~ 5350 5750
-Wire Wire Line
-	5500 6150 5500 6250
-Wire Wire Line
-	5350 6150 5500 6150
-Wire Wire Line
-	5350 6100 5350 6150
-Wire Wire Line
-	5350 5750 5350 5800
-$Comp
-L Device:C C22
-U 1 1 5F6E64FA
-P 5350 5950
-F 0 "C22" H 5200 6050 50  0000 L CNN
-F 1 "22uF" H 5150 5850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5388 5800 50  0001 C CNN
-F 3 "~" H 5350 5950 50  0001 C CNN
-	1    5350 5950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR030
-U 1 1 5F6E76C2
-P 5500 6250
-F 0 "#PWR030" H 5500 6000 50  0001 C CNN
-F 1 "GND" H 5505 6077 50  0000 C CNN
-F 2 "" H 5500 6250 50  0001 C CNN
-F 3 "" H 5500 6250 50  0001 C CNN
-	1    5500 6250
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5400 5300 5400 5400
-$Comp
-L Device:L L3
-U 1 1 5F6E59A5
-P 5600 5600
-F 0 "L3" H 5556 5554 50  0000 R CNN
-F 1 "4.7uH" H 5556 5645 50  0000 R CNN
-F 2 "Inductor_SMD:L_0402_1005Metric" H 5600 5600 50  0001 C CNN
-F 3 "~" H 5600 5600 50  0001 C CNN
-	1    5600 5600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5350 5750 5600 5750
-Wire Wire Line
-	5400 5400 5600 5400
-Wire Wire Line
-	5600 5400 5600 5450
-Wire Wire Line
-	5500 5450 5500 6150
-Connection ~ 5500 6150
-Wire Wire Line
-	5200 5300 5200 5350
-Wire Wire Line
-	5200 5350 5250 5350
-Wire Wire Line
-	5300 5300 5300 5350
-Wire Wire Line
-	5300 5350 5350 5350
-Wire Wire Line
-	5350 5350 5350 5450
-Wire Wire Line
-	5350 5450 5500 5450
-Wire Wire Line
-	5250 5350 5250 5400
-Wire Wire Line
-	5250 5400 5300 5400
-Wire Wire Line
-	5300 5400 5300 5500
-Wire Wire Line
-	5300 5500 5350 5500
-$Comp
-L Device:C C21
-U 1 1 5F6E300F
-P 5200 5550
-F 0 "C21" H 5050 5650 50  0000 L CNN
-F 1 "0.1uF" H 5000 5450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 5238 5400 50  0001 C CNN
-F 3 "~" H 5200 5550 50  0001 C CNN
-	1    5200 5550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5350 5500 5350 5750
-Wire Wire Line
-	5200 5700 5200 5750
-Wire Wire Line
-	5200 5750 5350 5750
-Wire Wire Line
-	5100 5300 5100 5350
-Wire Wire Line
-	5100 5350 5150 5350
-Wire Wire Line
-	5150 5350 5150 5400
-Wire Wire Line
-	5150 5400 5200 5400
 Wire Wire Line
 	4900 6850 4900 7100
 $Comp
@@ -984,8 +888,6 @@ F 3 "" H 1500 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 1000 1150 1100
-Text GLabel 3350 4000 0    50   Input ~ 0
-VSTOR_MEASURE
 Wire Wire Line
 	6000 4300 7050 4300
 Wire Wire Line
@@ -1050,4 +952,95 @@ Wire Wire Line
 Connection ~ 2600 1850
 Wire Wire Line
 	2100 1850 2050 1850
+$Comp
+L Device:C C21
+U 1 1 5F6E300F
+P 5200 5950
+F 0 "C21" H 5050 6050 50  0000 L CNN
+F 1 "0.1uF" H 5000 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5238 5800 50  0001 C CNN
+F 3 "~" H 5200 5950 50  0001 C CNN
+	1    5200 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C22
+U 1 1 5F6E64FA
+P 5450 5950
+F 0 "C22" H 5300 6050 50  0000 L CNN
+F 1 "22uF" H 5250 5850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5488 5800 50  0001 C CNN
+F 3 "~" H 5450 5950 50  0001 C CNN
+	1    5450 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 5F6E76C2
+P 5600 6200
+F 0 "#PWR030" H 5600 5950 50  0001 C CNN
+F 1 "GND" H 5605 6027 50  0000 C CNN
+F 2 "" H 5600 6200 50  0001 C CNN
+F 3 "" H 5600 6200 50  0001 C CNN
+	1    5600 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L3
+U 1 1 5F6E59A5
+P 5700 5600
+F 0 "L3" H 5656 5554 50  0000 R CNN
+F 1 "4.7uH" H 5656 5645 50  0000 R CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5700 5600 50  0001 C CNN
+F 3 "~" H 5700 5600 50  0001 C CNN
+	1    5700 5600
+	-1   0    0    1   
+$EndComp
+Text GLabel 3350 4000 0    50   Input ~ 0
+VSTOR_MEASURE
+Wire Wire Line
+	5700 5400 5700 5450
+Wire Wire Line
+	5400 5400 5700 5400
+Wire Wire Line
+	5200 5750 5200 5800
+Wire Wire Line
+	5100 5300 5100 5750
+Wire Wire Line
+	5100 5750 5200 5750
+Connection ~ 5200 5750
+Wire Wire Line
+	5450 5800 5450 5750
+Connection ~ 5450 5750
+Wire Wire Line
+	5450 5750 5700 5750
+Wire Wire Line
+	5200 5750 5300 5750
+Wire Wire Line
+	5200 5300 5200 5550
+Wire Wire Line
+	5200 5550 5300 5550
+Wire Wire Line
+	5300 5550 5300 5750
+Connection ~ 5300 5750
+Wire Wire Line
+	5300 5750 5450 5750
+Wire Wire Line
+	5600 6200 5600 6150
+Wire Wire Line
+	5600 5450 5300 5450
+Wire Wire Line
+	5300 5450 5300 5300
+Wire Wire Line
+	5200 6100 5200 6150
+Wire Wire Line
+	5200 6150 5450 6150
+Connection ~ 5600 6150
+Wire Wire Line
+	5600 6150 5600 5450
+Wire Wire Line
+	5450 6100 5450 6150
+Connection ~ 5450 6150
+Wire Wire Line
+	5450 6150 5600 6150
 $EndSCHEMATC
