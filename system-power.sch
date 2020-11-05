@@ -341,8 +341,6 @@ F 3 "~" H 9700 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9700 3300 9700 3350
-Wire Wire Line
 	9700 3950 9700 4100
 Connection ~ 9700 4100
 $Comp
@@ -717,8 +715,6 @@ Wire Wire Line
 Connection ~ 4350 5750
 Wire Wire Line
 	4350 5750 5100 5750
-Wire Wire Line
-	5150 3650 5350 3650
 $Comp
 L Device:R R3
 U 1 1 5F878535
@@ -743,34 +739,6 @@ Text Notes 3450 3450 0    59   ~ 12
 Solar Panel Boost Converter
 Text Notes 8150 2800 0    59   ~ 12
 Buck-Boost Converter for 3.3 V
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FB4A073
-P 9700 3450
-AR Path="/5F6D82DD/5FB4A073" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5FB4A073" Ref="JP4"  Part="1" 
-F 0 "JP4" V 9800 3600 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 9655 3403 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 9700 3450 50  0001 C CNN
-F 3 "~" H 9700 3450 50  0001 C CNN
-	1    9700 3450
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9700 3550 9700 3650
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FB63904
-P 5450 3650
-AR Path="/5F6D82DD/5FB63904" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5FB63904" Ref="JP2"  Part="1" 
-F 0 "JP2" V 5550 3800 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 5405 3603 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5450 3650 50  0001 C CNN
-F 3 "~" H 5450 3650 50  0001 C CNN
-	1    5450 3650
-	1    0    0    -1  
-$EndComp
 Text GLabel 3650 3650 0    50   Output ~ 0
 VBAT_OK
 Wire Wire Line
@@ -1181,24 +1149,11 @@ Wire Wire Line
 Text Notes 3250 1100 0    50   Italic 0
 CAUTION:\nFootprint 1206
 Wire Wire Line
-	4000 2850 4500 2850
-Wire Wire Line
-	3150 2850 3800 2850
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FB646D7
-P 3900 2850
-AR Path="/5F6D82DD/5FB646D7" Ref="JP?"  Part="1" 
-AR Path="/5F687AA1/5FB646D7" Ref="JP1"  Part="1" 
-F 0 "JP1" V 4000 3000 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 3855 2803 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3900 2850 50  0001 C CNN
-F 3 "~" H 3900 2850 50  0001 C CNN
-	1    3900 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2250 4750 2750 4750
 Wire Wire Line
-	5550 3650 6750 3650
+	3150 2850 4500 2850
+Wire Wire Line
+	5150 3650 6750 3650
+Wire Wire Line
+	9700 3300 9700 3650
 $EndSCHEMATC
