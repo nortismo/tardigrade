@@ -185,23 +185,6 @@ Wire Wire Line
 Connection ~ 3450 5950
 Wire Wire Line
 	3450 5950 3450 5900
-$Comp
-L Device:Jumper_NC_Small JP?
-U 1 1 5FB371B1
-P 3450 4550
-AR Path="/5F6D82DD/5FB371B1" Ref="JP?"  Part="1" 
-AR Path="/5F6D9EB2/5FB371B1" Ref="JP15"  Part="1" 
-F 0 "JP15" V 3450 4502 50  0000 R CNN
-F 1 "Jumper_NC_Small" V 3405 4503 50  0001 R CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 3450 4550 50  0001 C CNN
-F 3 "~" H 3450 4550 50  0001 C CNN
-	1    3450 4550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3450 4700 3450 4650
-Wire Wire Line
-	3450 4450 3450 4400
 Text Notes 2200 6600 0    50   Italic 0
 The JTAG functions TRST, TCK, TMS, TDI, and TDO, are selected \non pins PIO0_2 to PIO0_6 by hardware when the part is in \nboundary scan mode. The JTAG functions cannot be used for \ndebug mode
 Text Notes 3900 4100 2    59   ~ 12
@@ -424,22 +407,6 @@ Wire Wire Line
 Text Notes 8450 1200 2    59   ~ 12
 Extension Header
 $Comp
-L power:PWR_FLAG #FLG07
-U 1 1 5FCBE7BD
-P 3300 4650
-F 0 "#FLG07" H 3300 4725 50  0001 C CNN
-F 1 "PWR_FLAG" H 3300 4823 50  0001 C CNN
-F 2 "" H 3300 4650 50  0001 C CNN
-F 3 "~" H 3300 4650 50  0001 C CNN
-	1    3300 4650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3450 4700 3300 4700
-Wire Wire Line
-	3300 4700 3300 4650
-Connection ~ 3450 4700
-$Comp
 L Mechanical:MountingHole H?
 U 1 1 5FDA315D
 P 9500 4900
@@ -521,12 +488,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR067
 U 1 1 5F833987
-P 3450 4400
-F 0 "#PWR067" H 3450 4250 50  0001 C CNN
-F 1 "+3.3V" H 3465 4573 50  0000 C CNN
-F 2 "" H 3450 4400 50  0001 C CNN
-F 3 "" H 3450 4400 50  0001 C CNN
-	1    3450 4400
+P 3450 4650
+F 0 "#PWR067" H 3450 4500 50  0001 C CNN
+F 1 "+3.3V" H 3465 4823 50  0000 C CNN
+F 2 "" H 3450 4650 50  0001 C CNN
+F 3 "" H 3450 4650 50  0001 C CNN
+	1    3450 4650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -568,4 +535,6 @@ Wire Wire Line
 Connection ~ 9200 2150
 Wire Wire Line
 	9200 2150 9200 2650
+Wire Wire Line
+	3450 4650 3450 4700
 $EndSCHEMATC
