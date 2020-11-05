@@ -373,7 +373,7 @@ U 1 1 5FAF0C03
 P 8100 2200
 F 0 "J8" H 8150 3017 50  0000 C CNN
 F 1 "Conn_02x14_Odd_Even" H 8150 2926 50  0000 C CNN
-F 2 "" H 8100 2200 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x14_P2.54mm_Vertical" H 8100 2200 50  0001 C CNN
 F 3 "~" H 8100 2200 50  0001 C CNN
 	1    8100 2200
 	-1   0    0    -1  
