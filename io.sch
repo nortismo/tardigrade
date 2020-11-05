@@ -191,44 +191,6 @@ Text Notes 3900 4100 2    59   ~ 12
 SWO / Debug Pins
 Text Notes 3050 1200 2    59   ~ 12
 High-Speed USB 2.0 (USB-C)
-Text GLabel 8400 2750 2    50   Input ~ 0
-VBAT_OK
-Text GLabel 8400 1750 2    50   BiDi ~ 0
-MCU_PIO1_0
-Text GLabel 7700 2250 0    50   BiDi ~ 0
-MCU_PIO0_16
-Text GLabel 7700 2150 0    50   BiDi ~ 0
-MCU_PIO0_15
-Text GLabel 7700 2850 0    50   BiDi ~ 0
-MCU_PIO0_31
-Text GLabel 7700 2050 0    50   BiDi ~ 0
-MCU_PIO0_10
-Text GLabel 7700 2550 0    50   BiDi ~ 0
-MCU_PIO0_20
-Text GLabel 8400 2050 2    50   BiDi ~ 0
-MCU_PIO1_3
-Text GLabel 8400 1950 2    50   BiDi ~ 0
-MCU_PIO1_2
-Text GLabel 8400 1850 2    50   BiDi ~ 0
-MCU_PIO1_1
-Text GLabel 7700 2350 0    50   BiDi ~ 0
-MCU_PIO0_18
-Text GLabel 7700 1950 0    50   BiDi ~ 0
-MCU_PIO0_9
-Text GLabel 8400 2450 2    50   BiDi ~ 0
-MCU_USB0_DN
-Text GLabel 7700 2450 0    50   BiDi ~ 0
-MCU_PIO0_19
-Text GLabel 7700 2750 0    50   BiDi ~ 0
-MCU_PIO0_22
-Text GLabel 7700 2650 0    50   BiDi ~ 0
-MCU_PIO0_21
-Text GLabel 8400 2350 2    50   Output ~ 0
-MCU_UART_RX
-Text GLabel 8400 2250 2    50   Input ~ 0
-MCU_UART_TX
-Text GLabel 8400 2550 2    50   BiDi ~ 0
-MCU_USB0_DP
 $Comp
 L Connector_Generic:Conn_01x03 J7
 U 1 1 5F876392
@@ -298,112 +260,6 @@ Wire Wire Line
 	6350 4550 6350 4700
 Wire Wire Line
 	6350 4700 6450 4700
-Text GLabel 8400 2850 2    50   BiDi ~ 0
-EXT_VBAT
-Text GLabel 8400 2950 2    50   Output ~ 0
-EXT_VIN
-$Comp
-L Connector_Generic:Conn_02x14_Top_Bottom J8
-U 1 1 5F9A21A1
-P 8000 2250
-F 0 "J8" H 8050 3067 50  0000 C CNN
-F 1 "Conn_02x14_Top_Bottom" H 8050 2976 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x14_P2.54mm_Vertical" H 8000 2250 50  0001 C CNN
-F 3 "~" H 8000 2250 50  0001 C CNN
-	1    8000 2250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR074
-U 1 1 5F9A457A
-P 7150 1550
-F 0 "#PWR074" H 7150 1400 50  0001 C CNN
-F 1 "+3.3V" H 7165 1723 50  0000 C CNN
-F 2 "" H 7150 1550 50  0001 C CNN
-F 3 "" H 7150 1550 50  0001 C CNN
-	1    7150 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR076
-U 1 1 5FA0CA24
-P 9200 3150
-F 0 "#PWR076" H 9200 2900 50  0001 C CNN
-F 1 "GND" H 9205 2977 50  0000 C CNN
-F 2 "" H 9200 3150 50  0001 C CNN
-F 3 "" H 9200 3150 50  0001 C CNN
-	1    9200 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR072
-U 1 1 5FA0D50C
-P 6900 3150
-F 0 "#PWR072" H 6900 2900 50  0001 C CNN
-F 1 "GND" H 6905 2977 50  0000 C CNN
-F 2 "" H 6900 3150 50  0001 C CNN
-F 3 "" H 6900 3150 50  0001 C CNN
-	1    6900 3150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8300 1650 9200 1650
-Wire Wire Line
-	8300 2650 9200 2650
-Connection ~ 9200 2650
-Wire Wire Line
-	9200 2650 9200 3150
-Wire Wire Line
-	7800 1850 6900 1850
-Wire Wire Line
-	6900 1850 6900 2950
-Wire Wire Line
-	7800 2950 6900 2950
-Connection ~ 6900 2950
-Wire Wire Line
-	6900 2950 6900 3150
-Wire Wire Line
-	8400 1750 8300 1750
-Wire Wire Line
-	8400 1850 8300 1850
-Wire Wire Line
-	8400 1950 8300 1950
-Wire Wire Line
-	8400 2050 8300 2050
-Wire Wire Line
-	8400 2250 8300 2250
-Wire Wire Line
-	8400 2350 8300 2350
-Wire Wire Line
-	8400 2450 8300 2450
-Wire Wire Line
-	8400 2550 8300 2550
-Wire Wire Line
-	8400 2750 8300 2750
-Wire Wire Line
-	8400 2850 8300 2850
-Wire Wire Line
-	8400 2950 8300 2950
-Wire Wire Line
-	7700 2850 7800 2850
-Wire Wire Line
-	7800 2750 7700 2750
-Wire Wire Line
-	7700 2650 7800 2650
-Wire Wire Line
-	7800 2550 7700 2550
-Wire Wire Line
-	7700 2450 7800 2450
-Wire Wire Line
-	7800 2350 7700 2350
-Wire Wire Line
-	7700 2250 7800 2250
-Wire Wire Line
-	7800 2150 7700 2150
-Wire Wire Line
-	7700 2050 7800 2050
-Wire Wire Line
-	7800 1950 7700 1950
 Text Notes 8450 1200 2    59   ~ 12
 Extension Header
 $Comp
@@ -466,25 +322,6 @@ Wire Wire Line
 	3250 2100 3300 2100
 Wire Wire Line
 	3250 2300 3300 2300
-Wire Wire Line
-	7150 1750 7150 1550
-Wire Wire Line
-	7800 1750 7150 1750
-$Comp
-L power:VBUS #PWR075
-U 1 1 5F830396
-P 7400 1550
-F 0 "#PWR075" H 7400 1400 50  0001 C CNN
-F 1 "VBUS" H 7415 1723 50  0000 C CNN
-F 2 "" H 7400 1550 50  0001 C CNN
-F 3 "" H 7400 1550 50  0001 C CNN
-	1    7400 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7400 1550 7400 1650
-Wire Wire Line
-	7400 1650 7800 1650
 $Comp
 L power:+3.3V #PWR067
 U 1 1 5F833987
@@ -511,8 +348,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 1600 4000 1600
 Wire Wire Line
-	9200 1650 9200 2150
-Wire Wire Line
 	3350 1600 3400 1600
 Wire Wire Line
 	3250 1600 3350 1600
@@ -531,10 +366,175 @@ F 3 "~" H 3350 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8300 2150 9200 2150
-Connection ~ 9200 2150
-Wire Wire Line
-	9200 2150 9200 2650
-Wire Wire Line
 	3450 4650 3450 4700
+$Comp
+L Connector_Generic:Conn_02x14_Odd_Even J8
+U 1 1 5FAF0C03
+P 8100 2200
+F 0 "J8" H 8150 3017 50  0000 C CNN
+F 1 "Conn_02x14_Odd_Even" H 8150 2926 50  0000 C CNN
+F 2 "" H 8100 2200 50  0001 C CNN
+F 3 "~" H 8100 2200 50  0001 C CNN
+	1    8100 2200
+	-1   0    0    -1  
+$EndComp
+Text GLabel 7650 1700 0    50   BiDi ~ 0
+MCU_PIO0_9
+Text GLabel 8450 1800 2    50   BiDi ~ 0
+MCU_PIO0_10
+Text GLabel 7650 1800 0    50   BiDi ~ 0
+MCU_PIO0_15
+Text GLabel 7650 1900 0    50   BiDi ~ 0
+MCU_PIO0_18
+Text GLabel 7650 2000 0    50   BiDi ~ 0
+MCU_PIO0_20
+Text GLabel 7650 2100 0    50   BiDi ~ 0
+MCU_PIO0_22
+Text GLabel 7650 2300 0    50   BiDi ~ 0
+MCU_PIO1_0
+Text GLabel 7650 2400 0    50   BiDi ~ 0
+MCU_PIO1_2
+Text GLabel 7650 2600 0    50   Output ~ 0
+MCU_UART_RX
+Text GLabel 7650 2700 0    50   BiDi ~ 0
+MCU_USB0_DP
+Text GLabel 7650 2800 0    50   Input ~ 0
+VBAT_OK
+Text GLabel 7650 2900 0    50   Output ~ 0
+EXT_VIN
+Text GLabel 8450 1900 2    50   BiDi ~ 0
+MCU_PIO0_16
+Text GLabel 8450 2000 2    50   BiDi ~ 0
+MCU_PIO0_19
+Text GLabel 8450 2100 2    50   BiDi ~ 0
+MCU_PIO0_21
+Text GLabel 8450 2200 2    50   BiDi ~ 0
+MCU_PIO0_31
+Text GLabel 8450 2400 2    50   BiDi ~ 0
+MCU_PIO1_1
+Text GLabel 8450 2500 2    50   BiDi ~ 0
+MCU_PIO1_3
+Text GLabel 8450 2600 2    50   Input ~ 0
+MCU_UART_TX
+Text GLabel 8450 2700 2    50   BiDi ~ 0
+MCU_USB0_DN
+Text GLabel 8450 2900 2    50   BiDi ~ 0
+EXT_VBAT
+$Comp
+L power:GND #PWR?
+U 1 1 5FB15973
+P 6950 3150
+F 0 "#PWR?" H 6950 2900 50  0001 C CNN
+F 1 "GND" H 6955 2977 50  0000 C CNN
+F 2 "" H 6950 3150 50  0001 C CNN
+F 3 "" H 6950 3150 50  0001 C CNN
+	1    6950 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FB15D4A
+P 9150 3200
+F 0 "#PWR?" H 9150 2950 50  0001 C CNN
+F 1 "GND" H 9155 3027 50  0000 C CNN
+F 2 "" H 9150 3200 50  0001 C CNN
+F 3 "" H 9150 3200 50  0001 C CNN
+	1    9150 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1700 9150 1700
+Wire Wire Line
+	9150 1700 9150 2300
+Wire Wire Line
+	7800 2200 6950 2200
+Wire Wire Line
+	6950 2200 6950 2500
+Wire Wire Line
+	7800 2500 6950 2500
+Connection ~ 6950 2500
+Wire Wire Line
+	6950 2500 6950 3150
+Wire Wire Line
+	8300 2300 9150 2300
+Connection ~ 9150 2300
+Wire Wire Line
+	9150 2300 9150 2800
+Wire Wire Line
+	8300 2800 9150 2800
+Connection ~ 9150 2800
+Wire Wire Line
+	9150 2800 9150 3200
+$Comp
+L power:VBUS #PWR?
+U 1 1 5FB21530
+P 8600 1500
+F 0 "#PWR?" H 8600 1350 50  0001 C CNN
+F 1 "VBUS" H 8615 1673 50  0000 C CNN
+F 2 "" H 8600 1500 50  0001 C CNN
+F 3 "" H 8600 1500 50  0001 C CNN
+	1    8600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 1600 8600 1600
+Wire Wire Line
+	8600 1600 8600 1500
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5FB24107
+P 7400 1500
+F 0 "#PWR?" H 7400 1350 50  0001 C CNN
+F 1 "+3.3V" H 7415 1673 50  0000 C CNN
+F 2 "" H 7400 1500 50  0001 C CNN
+F 3 "" H 7400 1500 50  0001 C CNN
+	1    7400 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 1500 7400 1600
+Wire Wire Line
+	7400 1600 7800 1600
+Wire Wire Line
+	7650 1700 7800 1700
+Wire Wire Line
+	7800 1800 7650 1800
+Wire Wire Line
+	7650 1900 7800 1900
+Wire Wire Line
+	7800 2000 7650 2000
+Wire Wire Line
+	7650 2100 7800 2100
+Wire Wire Line
+	7800 2300 7650 2300
+Wire Wire Line
+	7650 2400 7800 2400
+Wire Wire Line
+	7800 2600 7650 2600
+Wire Wire Line
+	7650 2700 7800 2700
+Wire Wire Line
+	7800 2800 7650 2800
+Wire Wire Line
+	7650 2900 7800 2900
+Wire Wire Line
+	8300 2900 8450 2900
+Wire Wire Line
+	8300 2700 8450 2700
+Wire Wire Line
+	8300 2600 8450 2600
+Wire Wire Line
+	8450 2500 8300 2500
+Wire Wire Line
+	8300 2400 8450 2400
+Wire Wire Line
+	8450 2200 8300 2200
+Wire Wire Line
+	8300 2100 8450 2100
+Wire Wire Line
+	8450 2000 8300 2000
+Wire Wire Line
+	8300 1900 8450 1900
+Wire Wire Line
+	8450 1800 8300 1800
 $EndSCHEMATC
