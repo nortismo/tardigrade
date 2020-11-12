@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
 Title "Tardigrade"
-Date "2020-11-06"
-Rev "1.0"
+Date "2020-11-12"
+Rev "1.1"
 Comp "Lucerne University of Applied Sciences and Arts"
 Comment1 "Author: Diego Bienz"
 Comment2 ""

@@ -11,9 +11,11 @@
 
   (page A4)
   (title_block
-    (title "Tardigrade Layout")
-    (date 2020-11-09)
+    (title Tardigrade)
+    (date 2020-11-12)
     (rev V1.1)
+    (company "Lucerne University of Applied Sciences and Arts")
+    (comment 1 "Author: Diego Bienz")
   )
 
   (layers
