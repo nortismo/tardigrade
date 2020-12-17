@@ -739,7 +739,7 @@ F 3 "" H 3500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 5600 6850 0    50   ~ 0
-Settings for BQ25504:\n\nVBAT_OV: 4.093 V\nVBAT_UV: 2.803 V\nVBAT_OK: 2.998 V\nVBAT_OK_HYST: 3.096 V\nVREF_SAMP: 0.8 V
+Settings for BQ25504:\n\nVBAT_OV: 4.093 V\nVBAT_UV: 2.803 V\nVBAT_OK: 2.998 V\nVBAT_OK_HYST: 3.096 V
 $Comp
 L power:PWR_FLAG #FLG02
 U 1 1 5FE1B77A
@@ -946,8 +946,6 @@ F 3 "~" H 2200 3450 50  0001 C CNN
 	1    2200 3450
 	0    1    1    0   
 $EndComp
-Text Notes 950  3300 0    50   Italic 0
-TODO:\nTry maximum R and go back\nfor 1 or 2 values
 Text GLabel 8100 4450 3    50   Input ~ 0
 VBAT_OK
 Wire Wire Line
@@ -1091,4 +1089,6 @@ Wire Wire Line
 Connection ~ 1550 4950
 Wire Wire Line
 	1550 4950 1550 5100
+Text Notes 3100 6150 0    50   ~ 0
+MPPT Tracking is set to 80%
 $EndSCHEMATC
