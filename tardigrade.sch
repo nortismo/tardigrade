@@ -30,9 +30,7 @@ Initial Version.
 Wire Notes Line
 	9000 950  11200 950 
 Wire Notes Line
-	9000 500  9000 950 
-Wire Notes Line
-	9250 700  9250 950 
+	9000 500  9000 1700
 Text Notes 4750 3150 0    236  ~ 47
 Tardigrade
 $Sheet
@@ -59,6 +57,12 @@ U 5F6D9EB2
 F0 "Input/Output" 50
 F1 "io.sch" 50
 $EndSheet
-Text Notes 650  6600 0    50   ~ 0
-Notes: \n- Decoupling C should be placed as soon as possible to the corresponding IC.
+Text Notes 9300 1600 0    50   ~ 0
+- Fixed various issues (tracked on GitHub)\n- Removed LEDs from Solar Input and \n   BQ25504 Output\n- Removed all jumpers (soldered and \n   normal)\n- Changed pinout on MCU and Extension \n   Header
+Wire Notes Line
+	9000 1700 11200 1700
+Wire Notes Line
+	9250 700  9250 1700
+Text Notes 9050 1100 0    50   ~ 0
+1.1
 $EndSCHEMATC
